@@ -666,6 +666,14 @@
     .fade-in-up {
       animation: fadeInUp 0.8s ease-out;
     }
+    /* CSS */
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
   </style>
 </head>
 <body>
@@ -1162,6 +1170,14 @@
         header.style.transform = `translateY(${speed}px)`;
       }
     });
+
+    // javascript
+window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
   </script>
 
   <!-- Additional SEO structured data for Toronto local business -->
