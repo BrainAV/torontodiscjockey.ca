@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://torontodiscjockey.ca/sitemap.xml
